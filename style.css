@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');  /* 구글 폰트를 이용하여 나눔고딕체 적용 */
+html{
+  font-family: 'Nanum Gothic', sans-serif;      /* 구글 폰트를 이용하여 나눔고딕체 적용 */
+}
+
+body{
+  margin: 0;
+  background-color: #FBF3F3;
+}
+a {
+  color: black;
+  text-decoration: none;    /* 링크 있는 텍스트의 밑줄 없애기 */
+}
+/*마우스를 올렸을 때 무지개색으로 변하도록 함*/
+a:hover, a:focus { animation-duration: 2s; animation-name: rainbowLink; animation-iteration-count: infinite; }
+@keyframes rainbowLink {
+ 0% { color: #ff2a2a; }
+ 15% { color: #ff7a2a; }
+ 30% { color: #ffc52a; }
+ 45% { color: #43ff2a; }
+ 60% { color: #2a89ff; }
+ 75% { color: #202082; }
+ 90% { color: #6b2aff; }
+ 100% { color: #e82aff; }
+}
+a:active {     /* 마우스를 클릭하는 동안 */
+  color: #BDBDBD;
+}
+h1 {
+  font-size: 45px;
+  text-align: center;   /* 가운데 정렬 */
+  margin: 0;
+  padding-top:20px;
+}
+h2{
+  margin: 50px;
+}
+ol {    /* 목차부분- 아래에 밑줄 긋기*/
+  border-bottom:2px dashed #FABCBC ;    /* border 기능을 활용한 밑줄 긋기 */
+  margin: 0px;
+  padding:30px;
+  padding-left: 50px;
+}
+
+img{
+  margin: 30px;
+}
+
+/*   스크롤바 적용   **/
+::-webkit-scrollbar{width: 16px;}
+::-webkit-scrollbar-track {background-color:FBEFEF;}
+::-webkit-scrollbar-thumb {background-color:#F5A9A9;border-radius: 10px;}
+::-webkit-scrollbar-thumb:hover {background: #F5A9A9;}
